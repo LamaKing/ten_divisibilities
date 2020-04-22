@@ -7,7 +7,6 @@ Not sure they actually exist.
 import time
 t0 = time.time()
 from itertools import permutations
-from scipy.special import factorial
 
 base = 10
 digits = range(1,base)
