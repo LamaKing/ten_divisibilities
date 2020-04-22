@@ -27,8 +27,11 @@ Here is the formulation of the riddel
 >abcdefghij is divisible by 10
 >
 >What’s my number?
-
+>
 >To clarify: a, b, c, d, e, f, g, h, i, and j are all single digits. Each digit from 0 to 9 is represented by exactly one letter. The number abcdefghij is a ten-digit number whose first digit is a, second digit is b, and so on. It does not mean that you multiply a x b x c x…
 
-If I'll have time I'll post the actual solution I found with a friend (otherwise the solution by Alex Bellos [here](https://www.theguardian.com/science/2020/apr/20/did-you-solve-it-john-horton-conway-playful-maths-genius)), this brute force method became a necessary check after 3 failed attempted at solving it relying entirely on pen and paper.
+If I'll have time I'll post the actual solution I found with a friend (otherwise a similar solution by Alex Bellos [here](https://www.theguardian.com/science/2020/apr/20/did-you-solve-it-john-horton-conway-playful-maths-genius)), this brute force method became a necessary check after 3 failed attempted at solving it relying entirely on pen and paper.
 Surprisngly, it turned out that 28 _actually is_ divisible by 7. A small detail we managed to overlook multiple times.
+
+The code relies on only on standard Python3 libraries ([itertool](https://docs.python.org/3/library/itertools.html) for computing permutations and [time](https://docs.python.org/3/library/time.html) to record execution time).
+You can run it in a command line ```bash python3 brute_force_10div.py``` from this repo folder  or with some IDE. It should take about 8s to go through all the permutations.
